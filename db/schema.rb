@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_10_143424) do
+ActiveRecord::Schema.define(version: 2022_07_10_143728) do
 
   create_table "companies", charset: "utf8mb4", force: :cascade do |t|
     t.string "name", null: false
@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2022_07_10_143424) do
     t.string "mail", null: false
     t.integer "number_of_employees"
     t.integer "capital"
-    t.date "Date_of_establishment"
+    t.date "date_of_establishment"
     t.string "corporate_site"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
