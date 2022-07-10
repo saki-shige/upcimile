@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_10_073637) do
+ActiveRecord::Schema.define(version: 2022_07_10_142732) do
 
   create_table "companies", charset: "utf8mb4", force: :cascade do |t|
     t.string "name", null: false
     t.text "introduction"
     t.string "adress", null: false
     t.string "mail", null: false
-    t.integer "number_of_emplayees"
+    t.integer "number_of_employees"
     t.integer "capital"
     t.date "Date_of_establishment"
     t.string "corporate_site"
