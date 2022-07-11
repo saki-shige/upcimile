@@ -1,2 +1,35 @@
-<h1>Products#new</h1>
-<p>Find me in app/views/products/new.html.erb</p>
+<%= form_with model: @product, local: true do |f|%>
+  <div>
+    <%= f.label :name %>
+  </div>
+  <div>
+    <%= f.text_field :name %>
+  </div>
+  <div>
+    <%= f.label :category %>
+  </div>
+  <div>
+    <%= f.collection_select :category_id, Category.all, :id, :name %>
+  </div>
+  <div>
+    <%= f.label :introduction %>
+  </div>
+  <div>
+    <%= f.text_area :introduction %>
+  </div>
+  <div>
+    <%= f.label :available_from %>
+  </div>
+  <div>
+    <%= f.date_select :available_from %>
+  </div>
+  <div>
+    <%= f.label :available_to %>
+  </div>
+  <div>
+    <%= f.date_select :available_to %>
+  </div>
+  <%= f.hidden_field :company_id, value: current_company.id %>
+  <%= f.submit %>
+<% end %>
+
