@@ -22,6 +22,6 @@ class CompaniesController < ApplicationController
   def company_params
     params.require(:company).
       permit(:name, :introduction, :address, :email, :number_of_employees, :capital,
-         :date_of_establishment, :corporate_site)
+         :date_of_establishment, :corporate_site, :image)
   end
 end
