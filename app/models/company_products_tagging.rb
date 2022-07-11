@@ -1,0 +1,2 @@
+class CompanyProductsTagging < ApplicationRecord
+end
