@@ -1,2 +1,51 @@
-<h1>Companies#edit</h1>
-<p>Find me in app/views/companies/edit.html.erb</p>
+<%= form_with model: @company, local: true do |f|%>
+  <div>
+    <%= f.label :name %>
+  </div>
+  <div>
+    <%= f.text_field :name %>
+  </div>
+  <div>
+    <%= f.label :introduction %>
+  </div>
+  <div>
+    <%= f.text_area :introduction %>
+  </div>
+  <div>
+    <%= f.label :address %>
+  </div>
+  <div>
+    <%= f.text_area :address %>
+  </div>
+  <div>
+    <%= f.label :email %>
+  </div>
+  <div>
+    <%= f.email_field :email %>
+  </div>
+  <div>
+    <%= f.label :number_of_employees %>
+  </div>
+  <div>
+    <%= f.number_field :number_of_employees %>
+  </div>
+  <div>
+    <%= f.label :capital %>
+  </div>
+  <div>
+    <%= f.number_field :capital %>
+  </div>
+  <div>
+    <%= f.label :Date_of_establishment %>
+  </div>
+  <div>
+    <%= f.date_select :Date_of_establishment %>
+  </div>
+  <div>
+    <%= f.label :corporate_site %>
+  </div>
+  <div>
+    <%= f.text_area :corporate_site %>
+  </div>
+    <%= f.submit %>
+<% end %>

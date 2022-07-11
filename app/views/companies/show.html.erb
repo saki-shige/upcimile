@@ -1,2 +1,55 @@
 <h1>Companies#show</h1>
 <p>Find me in app/views/companies/show.html.erb</p>
+
+
+  <div>
+    name
+  </div>
+  <div>
+    <%= @company.name %>
+  </div>
+  <div>
+    introduction
+  </div>
+  <div>
+    <%= @company.introduction %>
+  </div>
+  <div>
+    address
+  </div>
+  <div>
+    <%= @company.address %>
+  </div>
+  <div>
+    email
+  </div>
+  <div>
+    <%= @company.email %>
+  </div>
+  <div>
+    number_of_employees
+  </div>
+  <div>
+    <%=  @company.number_of_employees %>
+  </div>
+  <div>
+    capital
+  </div>
+  <div>
+    <%= @company.capital %>
+  </div>
+  <div>
+    Date_of_establishment
+  </div>
+  <div>
+    <%= @company.date_of_establishment %>
+  </div>
+  <div>
+    corporate_site
+  </div>
+  <div>
+    <%= @company.corporate_site %>
+  </div>
+    <%= link_to '編集', edit_company_path %>
+
+
