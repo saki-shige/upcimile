@@ -10,13 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_11_012621) do
+ActiveRecord::Schema.define(version: 2022_07_11_021927) do
 
   create_table "companies", charset: "utf8mb4", force: :cascade do |t|
     t.string "name", null: false
     t.text "introduction"
     t.string "address", null: false
-    t.string "mail", null: false
     t.integer "number_of_employees"
     t.integer "capital"
     t.date "date_of_establishment"
