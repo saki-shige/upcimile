@@ -1,7 +1,9 @@
-<h1>Companies#show</h1>
-<p>Find me in app/views/companies/show.html.erb</p>
-
-
+  <div>
+    image
+  </div>
+  <div>
+    <%= image_tag @company.image, size: '320x240' if @company.image.attached? %>
+  </div>
   <div>
     name
   </div>
