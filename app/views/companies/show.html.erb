@@ -1,57 +1,55 @@
-  <div>
-    image
-  </div>
-  <div>
-    <%= image_tag @company.image, size: '320x240' if @company.image.attached? %>
-  </div>
-  <div>
-    name
-  </div>
-  <div>
-    <%= @company.name %>
-  </div>
-  <div>
-    introduction
-  </div>
-  <div>
-    <%= @company.introduction %>
-  </div>
-  <div>
-    address
-  </div>
-  <div>
-    <%= @company.address %>
-  </div>
-  <div>
-    email
-  </div>
-  <div>
-    <%= @company.email %>
-  </div>
-  <div>
-    number_of_employees
-  </div>
-  <div>
-    <%=  @company.number_of_employees %>
-  </div>
-  <div>
-    capital
-  </div>
-  <div>
-    <%= @company.capital %>
-  </div>
-  <div>
-    Date_of_establishment
-  </div>
-  <div>
-    <%= @company.date_of_establishment %>
-  </div>
-  <div>
-    corporate_site
-  </div>
-  <div>
-    <%= @company.corporate_site %>
-  </div>
-    <%= link_to '編集', edit_company_path %>
-
-
+<div>
+  image
+</div>
+<div>
+  <%= image_tag @company.image, size: '320x240' if @company.image.attached? %>
+</div>
+<div>
+  name
+</div>
+<div>
+  <%= @company.name %>
+</div>
+<div>
+  introduction
+</div>
+<div>
+  <%= @company.introduction %>
+</div>
+<div>
+  address
+</div>
+<div>
+  <%= @company.address %>
+</div>
+<div>
+  email
+</div>
+<div>
+  <%= @company.email %>
+</div>
+<div>
+  number_of_employees
+</div>
+<div>
+  <%=  @company.number_of_employees %>
+</div>
+<div>
+  capital
+</div>
+<div>
+  <%= @company.capital %>
+</div>
+<div>
+  Date_of_establishment
+</div>
+<div>
+  <%= @company.date_of_establishment %>
+</div>
+<div>
+  corporate_site
+</div>
+<div>
+  <%= @company.corporate_site %>
+</div>
+  <%= link_to '編集', edit_company_path %>
