@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'creators/index'
+  get 'creators/show'
   devise_for :companies
   resources :companies, only: [:index, :show, :edit, :update]
   resources :products
